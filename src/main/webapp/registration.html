@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration | Tech Symposium 2026</title>
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+
+form{
+width:60%;
+margin:40px auto;
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+label{
+display:block;
+margin-top:15px;
+font-weight:bold;
+}
+
+input,select,textarea{
+width:100%;
+padding:12px;
+margin-top:5px;
+border:1px solid #ccc;
+border-radius:5px;
+font-size:16px;
+}
+
+button{
+margin-top:25px;
+width:100%;
+padding:15px;
+background:#0d47a1;
+color:white;
+border:none;
+border-radius:5px;
+font-size:18px;
+cursor:pointer;
+}
+
+button:hover{
+background:#1565c0;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+<h1>Tech Symposium 2026</h1>
+</div>
+
+<nav>
+<ul>
+
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="events.html">Events</a></li>
+<li><a href="speakers.html">Speakers</a></li>
+<li><a href="schedule.html">Schedule</a></li>
+<li><a href="registration.html" class="active">Registration</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<h2>Event Registration</h2>
+
+<p>Register now to participate in Tech Symposium 2026.</p>
+
+</section>
+
+<form onsubmit="return validateForm()">
+
+<h2 style="text-align:center;color:#0d47a1;margin-bottom:20px;">
+Tech Symposium 2026 Registration
+</h2>
+
+<p style="text-align:center;margin-bottom:25px;">
+Fields marked with <span style="color:red;">*</span> are mandatory.
+</p>
+
+<label>Full Name <span style="color:red;">*</span></label>
+<input type="text" id="name" placeholder="Enter your full name" required>
+
+<label>Email Address <span style="color:red;">*</span></label>
+<input type="email" id="email" placeholder="Enter your email" required>
+
+<label>Phone Number <span style="color:red;">*</span></label>
+<input type="tel"
+       placeholder="10-digit mobile number"
+       pattern="[0-9]{10}"
+        title="Enter a valid 10-digit mobile number"
+       required>
+
+<label>College / University <span style="color:red;">*</span></label>
+<input type="text"
+       placeholder="Enter your college name"
+       required>
+
+<label>Department <span style="color:red;">*</span></label>
+
+<select required>
+
+<option value="">-- Select Department --</option>
+
+<option>Software Engineering</option>
+<option>Computer Science Engineering</option>
+<option>Artificial Intelligence & Data Science</option>
+<option>Information Technology</option>
+<option>Electronics & Communication</option>
+<option>Mechanical Engineering</option>
+<option>Civil Engineering</option>
+
+</select>
+
+<label>Year of Study <span style="color:red;">*</span></label>
+
+<select required>
+
+<option value="">-- Select Year --</option>
+
+<option>1st Year</option>
+<option>2nd Year</option>
+<option>3rd Year</option>
+<option>4th Year</option>
+<option>M.Tech / Integrated M.Tech</option>
+</select>
+
+<label>Select Event <span style="color:red;">*</span></label>
+
+<select required>
+
+<option value="">-- Select Event --</option>
+
+<option>24-Hour Hackathon</option>
+<option>Coding Contest</option>
+<option>Paper Presentation</option>
+<option>Robotics Challenge</option>
+<option>Cloud & DevOps Workshop</option>
+<option>Cyber Security Workshop</option>
+
+</select>
+
+<label>Additional Message</label>
+
+<textarea rows="5"
+placeholder="Any special requirements or comments (Optional)"></textarea>
+
+<div class="checkbox-group">
+
+<input type="checkbox" id="agree" required>
+
+<label for="agree">
+I confirm that the information provided is correct.
+<span style="color:red">*</span>
+</label>
+
+</div>
+
+<button type="submit">
+
+Register Now
+
+</button>
+
+</form>
+
+<footer>
+
+<h3>Tech Symposium 2026</h3>
+
+<p>Annual Technical Symposium</p>
+
+<p>© 2026 All Rights Reserved.</p>
+
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

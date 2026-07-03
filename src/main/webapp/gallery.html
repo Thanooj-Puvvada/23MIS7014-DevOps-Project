@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery | Tech Symposium 2026</title>
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+padding:50px;
+}
+
+.gallery img{
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,.2);
+transition:.3s;
+}
+
+.gallery img:hover{
+transform:scale(1.05);
+}
+
+.caption{
+text-align:center;
+margin-top:10px;
+font-weight:bold;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+<h1>Tech Symposium 2026</h1>
+</div>
+
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="events.html">Events</a></li>
+<li><a href="speakers.html">Speakers</a></li>
+<li><a href="schedule.html">Schedule</a></li>
+<li><a href="registration.html">Registration</a></li>
+<li><a href="gallery.html" class="active">Gallery</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<h2>Gallery</h2>
+
+<p>Highlights from previous Tech Symposium events.</p>
+
+</section>
+
+<section class="gallery">
+
+<div>
+<img src="https://picsum.photos/500/300?random=1">
+<p class="caption">Opening Ceremony</p>
+</div>
+
+<div>
+<img src="https://picsum.photos/500/300?random=2">
+<p class="caption">Hackathon</p>
+</div>
+
+<div>
+<img src="https://picsum.photos/500/300?random=3">
+<p class="caption">Coding Contest</p>
+</div>
+
+<div>
+<img src="https://picsum.photos/500/300?random=4">
+<p class="caption">Paper Presentation</p>
+</div>
+
+<div>
+<img src="https://picsum.photos/500/300?random=5">
+<p class="caption">Project Expo</p>
+</div>
+
+<div>
+<img src="https://picsum.photos/500/300?random=6">
+<p class="caption">Award Ceremony</p>
+</div>
+
+</section>
+
+<footer>
+
+<h3>Tech Symposium 2026</h3>
+
+<p>Annual Technical Symposium</p>
+
+<p>© 2026 All Rights Reserved.</p>
+
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

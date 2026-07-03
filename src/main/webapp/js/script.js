@@ -1,0 +1,1 @@
+console.log("College Event Website Loaded Successfully");
